@@ -1,0 +1,16 @@
+#usando array
+import numpy as np
+# Definindo o array de produtos
+loja_virtual=['camisa','calca','tenis','jaqueta','boné','bermuda','blusa']
+kelvin=np.array([1,0,1,1,0,1,0])
+joão=np.array([0,1,0,1,1,0,1])
+#descobrindo quem é mais similar
+kelvin_joão=((kelvin[0]-joão[0])**2+\
+    (kelvin[1]-joão[1])**2+\
+    (kelvin[2]-joão[2])**2+\
+    (kelvin[3]-joão[3])**2+\
+    (kelvin[4]-joão[4])**2+\
+    (kelvin[5]-joão[5])**2+\
+    (kelvin[6]-joão[6])**2)**0.5
+# Exibindo o resultado
+print(kelvin_joão)
